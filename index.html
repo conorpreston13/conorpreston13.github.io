@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Treasure Hunt</title>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Treasure_chest.svg/1080px-Treasure_chest.svg.png">
+        <link rel="stylesheet" href="treasure.css">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <nav>
+            <a href="#rules">How to Play |</a>
+            <a href="#playgame">Play the Game</a>
+
+        </nav>
+<h1>Treasure Hunt</h1>
+<h2 id="rules">Rules of the Game</h2>
+<p>
+    Find the rainbow to win. <br />Clicking on a bomb is an automatic loss. <br /> Finding a tree will enable another chance to find the treasure chest.
+    </p>
+
+        <table id="playgame">
+            <tr>
+                <td id=0 onclick="treasure(0)"><img src="https://ui-ex.com/images/x-transparent-pirate.png" height="65px"></td>
+                <td id=1 onclick="treasure(1)"><img src="https://ui-ex.com/images/x-transparent-pirate.png" height="65px"></td>
+                <td id=2 onclick="treasure(2)"><img src="https://ui-ex.com/images/x-transparent-pirate.png" height="65px"></td>
+            </tr>
+            <tr>
+                <td id=3 onclick="treasure(3)"><img src="https://ui-ex.com/images/x-transparent-pirate.png" height="65px"></td>
+                <td id=4 onclick="treasure(4)"><img src="https://ui-ex.com/images/x-transparent-pirate.png" height="65px"></td>
+                <td id=5 onclick="treasure(5)"><img src="https://ui-ex.com/images/x-transparent-pirate.png" height="65px"></td>
+            </tr>
+            <tr>
+                <td id=6 onclick="treasure(6)"><img src="https://ui-ex.com/images/x-transparent-pirate.png" height="65px"></td>
+                <td id=7 onclick="treasure(7)"><img src="https://ui-ex.com/images/x-transparent-pirate.png" height="65px"></td>
+                <td id=8 onclick="treasure(8)"><img src="https://ui-ex.com/images/x-transparent-pirate.png" height="65px"></td>
+            </tr>
+
+
+
+        </table>
+
+    <br />
+    <div>
+
+        <button type="button" name="resetGame" onclick="location.reload()">Reset Game</button>
+    </div>
+        <br />
+        <br />
+<div id="count">
+        Turns Remaining : <a id=counter>5</a>
+    </div>
+
+        <script type="text/javascript" src="treasure.js">
+
+        </script>
+    </body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>&copy Jumpstart</footer>
+</html>
